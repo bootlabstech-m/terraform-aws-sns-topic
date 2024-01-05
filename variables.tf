@@ -30,3 +30,7 @@ variable "kms_master_key_id" {
   description = "kms_master_key_id"
   type        = string
 }
+variable "tracing_config" {
+  description = "tracing config"
+  type        = string
+}
