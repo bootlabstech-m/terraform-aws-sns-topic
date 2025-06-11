@@ -12,7 +12,7 @@ variable "no_of_sns_topics" {
 }
 variable "sns_topic_name" {
   description = "sns_topic_names to create.Apeend the name with .fifo if creating FIFO queues."
-  type        = list(string)
+  type        = string
 }
 variable "delivery_policy" {
   description = "delivery_policy"
