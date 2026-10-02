@@ -44,11 +44,14 @@ variable "content_based_deduplication" {
   description = "content_based_deduplication"
   type        = bool
 }
-variable "kms_master_key_id" {
-  description = "kms_master_key_id"
-  type        = string
-}
+
 variable "tracing_config" {
   description = "tracing config"
   type        = string
+}
+
+variable "kms_key_alias" {
+  type        = string
+  description = "ARN of the existing Customer Managed KMS Key used to encrypt the RDS database storage"
+  default     = "alias/mm_cmk_kms"
 }
